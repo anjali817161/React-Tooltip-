@@ -1,0 +1,117 @@
+/* App.css */
+.App a {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.App a:hover {
+  transform: scale(1.1);
+}
+
+.bottom-hover {
+  background-color: #ff6b6b;
+}
+
+.top-hover {
+  background-color: #6b8eff;
+}
+
+.left-hover {
+  background-color: #6bffb2;
+}
+
+.right-hover {
+  background-color: #ffcc6b;
+}
+
+/* Tooltip customization */
+.react-tooltip {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.react-tooltip[data-place="top"] {
+  background-color: #ff6b6b;
+}
+
+.react-tooltip[data-place="bottom"] {
+  background-color: #6b8eff;
+}
+
+.react-tooltip[data-place="left"] {
+  background-color: #6bffb2;
+}
+
+.react-tooltip[data-place="right"] {
+  background-color: #ffcc6b;
+}
+.stylish-heading {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-in-out;
+  position: relative;
+}
+
+.stylish-heading::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #2980b9;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50px;
+  }
+}
+
+a {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  color: #3498db;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+.tooltip-container {
+  display: flex;
+  justify-content: center;
+  gap: 2vh;
+}
